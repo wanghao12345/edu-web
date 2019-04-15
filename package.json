@@ -11,6 +11,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3",
+    "pug-filters": "^3.1.0",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -58,7 +66,8 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^3.3.1",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
