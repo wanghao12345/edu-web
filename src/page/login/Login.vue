@@ -4,12 +4,33 @@
       .login-main-box
         .login-logo-box
           img(:src="require('@/assets/img/login/logo.png')")
+        .hot-line-label 咨询热线：0318-8855666
         .login-bottom-right-bg-box
+        .login-item-box
+          label 手机号码：
+          input(placeholder="11位数字" type="text")
+        .login-item-box
+          label 密码：
+          input(placeholder="不少于六位" type="password")
+        .login-item-box
+          label 验证码：
+          input(placeholder="六位数字" type="text")
+        .login-item-box
+          label 类型：
+          input(type="radio")
+          label 学员
+          input(type="radio")
+          label 教师
 </template>
 
 <script>
 export default {
-  name: 'Login'
+  name: 'Login',
+  data () {
+    return {
+
+    }
+  }
 }
 </script>
 
@@ -53,6 +74,14 @@ export default {
             width: 100%;
             height: 100%;
           }
+        }
+        .hot-line-label{
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          font-family: PingFangTC-Regular;
+          font-size: 18px;
+          color: #232323;
         }
       }
     }
